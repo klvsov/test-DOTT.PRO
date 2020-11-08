@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <div class="form-wrapper">
+        <div class="place">
+          <p>
+            <label for="input_place">Место или название отеля</label>
+          </p>
+          <input
+            type="text"
+            id="input_place"
+            placeholder="Введите здесь место"
+          />
+        </div>
+        <div class="dates">
+          <div class="dates-wrap">
+            <p>
+              <label for="in_select">Заезд</label>
+            </p>
+
+            <select name="in" id="in_select">
+              <option value="07/02">07 февраля</option>
+              <option value="14/02">14 февраля</option>
+              <option value="21/02">21 февраля</option>
+            </select>
+          </div>
+          <div class="dates-wrap">
+            <p>
+              <label for="out_select">Выезд</label>
+            </p>
+
+            <select name="out" id="out_select">
+              <option value="22/02">22 февраля</option>
+              <option value="01/03">01 марта</option>
+              <option value="08/03">08 марта</option>
+            </select>
+          </div>
+        </div>
+        <div class="count">
+          <div class="room-wrap">
+            <label for="rooms">Номера</label>
+            <input type="number" id="rooms" value="1" />
+            <div class="btns-wrap">
+              <div class="btn btn-add"></div>
+              <div class="btn btn-sub"></div>
+            </div>
+          </div>
+          <div class="adult-wrap">
+            <label for="adult">Взрослые</label>
+            <input type="number" id="adult" value="1" />
+            <div class="btns-wrap">
+              <div class="btn btn-add"></div>
+              <div class="btn btn-sub"></div>
+            </div>
+          </div>
+          <div class="children-wrap">
+            <label for="children">Дети</label>
+            <input type="number" id="children" value="0" />
+            <div class="btns-wrap">
+              <div class="btn btn-add"></div>
+              <div class="btn btn-sub"></div>
+            </div>
+          </div>
+          <div class="btn-add__big">
+            <button type="button" class="add__big">+</button>
+          </div>
+        </div>
+        <div class="btn-submit">
+          <button class="submit">Найти</button>
+        </div>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
